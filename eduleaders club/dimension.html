@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Dimensions Growth - EduLeaders Educational Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #e67817;
+}
+
+h1, h2, h3 {
+  color: #000000;
+}
+
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background-color: #2f373e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* 7 Dimensions Section */
+.dimensions {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dimensions .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.dimension {
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(51, 50, 50, 0.2);
+  transition: transform 0.3s ease;
+  border: chocolate;
+}
+
+.dimension:hover {
+  transform: translateY(-10px);
+}
+
+.dimension-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.dimension-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dimension:hover .dimension-image img {
+  transform: scale(1.1);
+}
+
+.dimension-info {
+  padding: 20px;
+  background-color: #000000;
+  color: #333;
+}
+
+.dimension-info h3 {
+  font-size: 1.8rem;
+  color: #818181;
+}
+
+.dimension-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+</style>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>7 Dimensions of Growth</h1>
+      <p>Building a Holistic Educational Experience for Students</p>
+    </div>
+  </section>
+
+  <!-- 7 Dimensions Section -->
+  <section class="dimensions" id="dimensions">
+    <div class="container">
+      <!-- Islam24/7 Dimension -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="islam.jpg" alt="Error404" />
+        </div>
+        <div class="dimension-info">
+          <h3>Islam24/7</h3>
+          <p>Islam24/7 is a vital part of our curriculum, aiming to integrate Islamic values in everyday life. It fosters spiritual growth and guides students in maintaining their faith throughout their educational journey.</p>
+        </div>
+      </div>
+
+      <!-- Info Tech Club -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="pic5.jpg" alt="Error404" />
+        </div>
+        <div class="dimension-info">
+          <h3>Info Tech Club</h3>
+          <p>The Info Tech Club provides students with an opportunity to explore and develop their skills in the world of technology. It enhances critical thinking and prepares students for the tech-driven future.</p>
+        </div>
+      </div>
+
+      <!-- Schooling -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="schooling.jpg" alt="Error404" />
+        </div>
+        <div class="dimension-info">
+          <h3>Schooling</h3>
+          <p>Our schooling approach is designed to foster academic excellence while also focusing on the overall well-being of the students, preparing them for challenges both inside and outside the classroom.</p>
+        </div>
+      </div>
+
+      <!-- Business Club -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="bussiness club.jpg" alt="Error404" /> 
+        </div>
+        <div class="dimension-info">
+          <h3>Business Club</h3>
+          <p>The Business Club nurtures entrepreneurial skills and provides real-world insights into the business world, encouraging students to think critically and innovatively in the field of business and economics.</p>
+        </div>
+      </div>
+
+      <!-- Knowledge Factory -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="knowledge.jpg" alt="Error404" />
+        </div>
+        <div class="dimension-info">
+          <h3>Knowledge Factory</h3>
+          <p>The Knowledge Factory is designed to cultivate intellectual curiosity, offering workshops and seminars to expand students’ knowledge base in various subjects and disciplines.</p>
+        </div>
+      </div>
+
+      <!-- Sports Club -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="sports.jpg" alt="Sports Club" />
+        </div>
+        <div class="dimension-info">
+          <h3>Sports Club</h3>
+          <p>Physical fitness is just as important as mental growth. Our Sports Club encourages students to engage in various sports, promoting teamwork, discipline, and overall health.</p>
+        </div>
+      </div>
+
+      <!-- Food Club -->
+      <div class="dimension">
+        <div class="dimension-image">
+          <img src="food club.jpg" alt="Food Club" />
+        </div>
+        <div class="dimension-info">
+          <h3>Food Club</h3>
+          <p>The Food Club offers students hands-on experience with cooking and nutrition. It emphasizes healthy eating habits and teaches students how to prepare nutritious meals for a better lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

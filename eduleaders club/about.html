@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EduLeaders Educational Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3b3535;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #000000;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh;
+  background-color:#e67817;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-image img {
+  width: 103.7%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  border-radius: 10px;
+}
+
+.hero-content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* About School Section */
+.about-school {
+  padding: 60px 20px;
+  background-color: #6a6b6e;
+  text-align: center;
+}
+
+.about-school .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-school .content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* School Gallery */
+.school-gallery {
+  padding: 60px 20px;
+  background-color: #4b4848;
+  text-align: center;
+}
+
+.school-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* CEO Message Section */
+.ceo-message {
+  padding: 60px 20px;
+  background-color: #6c6c6c;
+  color: rgb(0, 0, 0);
+}
+
+.ceo-message .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ceo-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px rgb(18, 18, 18), -1em 0 .4em rgb(64, 64, 61);
+  position: relative;left: 200px;
+}
+
+.ceo-message .message {
+  max-width: 600px;
+  margin-left: 30px;
+}
+
+.ceo-message h2 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.ceo-message p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Islamic Education Section */
+.islamic-education {
+  padding: 60px 20px;
+  background-color: #e67817;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.islamic-education h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.islamic-education p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000000;
+}
+</style>
+<body>
+
+  <section class="hero">
+    <div class="hero-image">
+      <img src="ceo pic.jpg" alt="Error404">
+    </div>
+  </section>
+
+  
+  <section class="about-school">
+    <div class="content">
+      <h2>About EduLeaders</h2>
+      <p>EduLeaders Educational Club is a leading institution that combines world-class education with Islamic teachings to produce well-rounded individuals. We provide students with not only academic knowledge but also a strong foundation in Islamic values and ethics.</p>
+      <p>At EduLeaders, we aim to nurture the future leaders who will thrive in the modern world while staying true to their cultural and religious roots.</p>
+    </div>
+  </section>
+
+  <section class="school-gallery">
+    <h2>Our School</h2>
+    <div class="gallery">
+      <div class="image-container">
+        <img src="eduleaders building.jpg" alt="Error404"> 
+      </div>
+      <div class="image-container">
+        <img src="pic.jpg" alt="Error404">
+      </div>
+      <div class="image-container">
+        <img src="pic1.jpg" alt="Error404">
+      </div>
+      <div class="image-container">
+        <img src="pic2.jpg" alt="Error404">
+      </div>
+      <div class="image-container">
+        <img src="pic4.jpg" alt="Error404">
+      </div>
+      <div class="image-container">
+        <img src="pic8.jpg" alt="Error404">
+      </div>
+      <div class="image-container">
+        <img src="pic5.jpg" alt="Error404"> 
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO Message Section -->
+  <section class="ceo-message">
+    <div class="container">
+      <div class="ceo-photo">
+        <img src="ceooo.jpg" alt="Error404">
+      </div>
+      <div class="message">
+        <h2>Message from the CEO</h2>
+        <p>"At EduLeaders, we believe that education is the key to unlocking potential. Our institution focuses not only on academic excellence but also on instilling strong ethical and moral values in our students, in alignment with the teachings of Islam."</p>
+        <p><strong>Engr Muhammad Adil </strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Islamic Education Section -->
+  <section class="islamic-education">
+    <h2>Education with Islamic Values</h2>
+    <p>At EduLeaders, we are committed to providing education that is rooted in Islamic principles. Our curriculum includes not only modern subjects such as Science, Mathematics, and Humanities but also focuses on Islamic studies that teach the values of integrity, compassion, and social responsibility.</p>
+    <p>Our mission is to create a generation of students who are knowledgeable, ethical, and deeply connected to their faith. We strive to nurture leaders who will contribute positively to their communities, with a foundation in both knowledge and values.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EduLeaders Club - Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e67817;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #b4b0b0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #0b0b0b;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 95%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ffeeba;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Online Application Form</h2>
+
+        <p class="note">
+            <strong>Important Note:</strong> Once you submit your application, you cannot change your details. Please make
+            sure all your information is correct before submitting.
+        </p>
+
+        <form id="applicationForm" onsubmit="return disableForm()">
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer_not_to_say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="school_name">School/College Name</label>
+                <input type="text" id="school_name" name="school_name" required placeholder="Enter your school/college name">
+            </div>
+
+            <div class="form-group">
+                <label for="grade">Grade/Year</label>
+                <select id="grade" name="grade" required>
+                    <option value="Matric">Matric</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Mdcat">Mdcat</option>
+                    <option value="Ecat">Ecat</option>
+                    <option value="graduate">Graduate</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="field_of_study">Field of Study</label>
+                <input type="text" id="field_of_study" name="field_of_study" required placeholder="Enter your major/field of study">
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Why do you want to join EduLeaders Club?</label>
+                <textarea id="motivation" name="motivation" required placeholder="Why do you want to join the EduLeaders Club? (Maximum 500 words)" maxlength="500"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="leadership_skills">What leadership skills or experiences do you bring to the club?</label>
+                <textarea id="leadership_skills" name="leadership_skills" required placeholder="What leadership skills or experiences do you bring to the club?" maxlength="500"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I agree to the terms and conditions. Once submitted, I understand that I cannot change my details.</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submitBtn">Submit Application</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function disableForm() {
+            // Disable all form elements after submission
+            alert("Your application has been submitted. You cannot change the details once submitted.");
+
+            // Disable form elements
+            const formElements = document.querySelectorAll('input, select, textarea');
+            formElements.forEach(element => {
+                element.disabled = true;
+            });
+
+            // Disable the submit button
+            document.getElementById('submitBtn').disabled = true;
+
+            // Prevent form from actually submitting (for demo purposes)
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
